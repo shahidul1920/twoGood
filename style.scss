@@ -35,6 +35,13 @@ main{
                 white-space: nowrap;
                 letter-spacing: -0.05em;
                 line-height: 0.85em;
+                span{
+                    display: inline-block;
+                    
+                }
+                .the{
+                    margin-right: 25px;
+                }
             }
         }
         .videoSec{

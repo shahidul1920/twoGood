@@ -41,6 +41,12 @@ main .hero .headingMain h1 {
   letter-spacing: -0.05em;
   line-height: 0.85em;
 }
+main .hero .headingMain h1 span {
+  display: inline-block;
+}
+main .hero .headingMain h1 .the {
+  margin-right: 25px;
+}
 main .hero .videoSec {
   width: 100%;
   position: relative;
