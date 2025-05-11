@@ -6,13 +6,13 @@ const scroll = new LocomotiveScroll({
 const playCursr = () => {
   const videoSection = document.querySelector(".videoSec");
 
-//   gsap.from(videoSection,{
-//     y: 100,
-//     opacity: 0,
-//     scale: 0.5,
-//     duration: 1.5,
-//     ease: "power3.out",
-//   })
+  gsap.from(videoSection,{
+    y: 100,
+    opacity: 0,
+    scale: 0.5,
+    duration: 1.5,
+    ease: "power3.out",
+  })
 
   videoSection.addEventListener("mouseenter", () => {
     gsap.to(".videoSec span", {
@@ -30,9 +30,12 @@ const playCursr = () => {
   });
 
   videoSection.addEventListener("mousemove", (e) => {
+    const rect = videoSection.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
     gsap.to(".videoSec span", {
-      left: e.x - 50,
-      top: e.y - 50,
+      left: x,
+      top: y,
       duration: 0.5,
     });
   });
