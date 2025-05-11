@@ -1,5 +1,18 @@
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('.container'),
+  smooth: true
+});
+
 const playCursr = () => {
   const videoSection = document.querySelector(".videoSec");
+
+//   gsap.from(videoSection,{
+//     y: 100,
+//     opacity: 0,
+//     scale: 0.5,
+//     duration: 1.5,
+//     ease: "power3.out",
+//   })
 
   videoSection.addEventListener("mouseenter", () => {
     gsap.to(".videoSec span", {
@@ -33,8 +46,29 @@ const headerText = ()=>{
         ease: "power3.out",
     })
 }
+const btnanimation = () =>{
+    const btN = document.querySelector('.btnAnime');
+    const tl = gsap.timeline()
+    btN.addEventListener('mouseenter', ()=>{
+        console.log('he');
+        
+
+        tl.to('.btnAnime .one',{
+            left: 300,
+            opacity:0,
+            duration: 0.5,
+        })
+        tl.from('.btnAnime .two',{
+            opacity:1,
+            right: 300,
+            duration: 0.5,
+        })
+    })
+    
+}
 
 
 
 headerText();
 playCursr();
+btnanimation();
