@@ -204,4 +204,13 @@ main .hero .videoSec video, main .hero .videoSec img {
 .productGrid .cardProduct .textSec p {
   font-size: 14px;
   font-weight: 400;
+}
+
+.textSec-2 {
+  width: 100%;
+  max-height: 300px;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
 }/*# sourceMappingURL=style.css.map */
