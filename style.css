@@ -162,4 +162,18 @@ main .hero .videoSec video, main .hero .videoSec img {
   .images {
     margin-top: 1rem;
   }
+}
+.textSec-b {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
+.textSec-b .title {
+  max-width: auto;
+  line-height: 1.5em;
+  font-size: 32px;
+}
+.textSec-b p {
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
